@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/cadastro.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <title>Cadastro de cliente americanas</title>
+    </head>
+    <body>
+        <header>
+           <div class="logo">
+                <div class="traco1"></div>
+                   <a href="https://www.americanas.com.br/"><h1>americanas</h1></a>
+                <div class="traco2"></div>
+            </div>
+        </header>
+        
+        <div class="criar-cadastro">
+        <h2>criar seu cadastro</h2> 
+        <p class="frase-inicial">veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
+        </div>
+            <main>
+                <section class="container">
+                    <form action="/desafioamericanas/cadastro.html" method="post">
+                        <label class="nome-completo">*nome completo</p></label><br>
+                        <input type="text" name="nome" id="cadastro" >
+                        <br>
+
+                        <label class="genero">*gênero <br> pra gente te conhecer um pouquinho melhor :) </label>
+                        <br>
+                        <input type="radio" name="genero" id="genero"> feminino 
+                        <input type="radio" name="genero" id="genero"> masculino
+                        <input type="radio" name="genero" id="genero"> não informar
+                            
+                        <br>
+                            <label class="labels">*data de nascimento</label><br>
+                            <input type="date" name="dataDeNascimento" id="dataDeNascimento">
+                        <br>
+                            <label class="labels">*CPF <br> necessário pra emissão das Notas Fiscais</label><br>
+                            <input type="text" name="cpf" id="cpf" placeholder="Apenas números"><br>
+                            <p>é pessoa jurídica? conheça a americanas empresas</p>
+                        <br>
+                            <label class="labels">*telefone<br> caso a gente precise entrar em contato sobre seus pedidos</label><br>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Ex: (dd)00000-0000"><br>
+                            <input type="checkbox" name="notificacao" id="caixaCheque"> receber notificações por whatsapp
+                        <br>
+                            <label class="labels">*e-mail</label><br>
+                            <input type="email" name="email" id="email" placeholder="Ex:ruan@email.com.br"><br>
+                            <input type="checkbox" name="promocionais" id="promocionais"> receber e-mails promocionais
+                        <br>
+                            <label class="labels">*senha</label><br>
+                            <input type="password" name="senha" id="senha"><br>
+                            <input type="checkbox" name="compartilhamento" id="compartilhamento"> compartilhar meus dados com parceiros para ter conteúdos personalizados, veja como funciona.
+                        <br>
+                            <input type="submit" value="Criar seu cadastro">
+                        <br>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa Política de Privacidade</p>
+            <p>já tem cadastro? entrar</p>
+        </footer>
+        
+    </body>
+</html>
